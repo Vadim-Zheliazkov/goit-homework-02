@@ -38,12 +38,12 @@ body {
 .header {
     background-color: #FFFFFF;
 }
-.footer {
+.background {
     background-color: var(--background-color-whitetext)
 }   
 /* LOGO */
 .logo {
-    color: var(--first-color-text);
+    color: var(--color-button-normal);
     font-family: Raleway;
     font-weight: 800px;
     font-size: 18px;
@@ -117,8 +117,7 @@ body {
 .title {
     font-size: 36px;
     line-height: 1, 11;
-    text-align: center;
-    letter-spacing: 0.02em;
+        letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 
