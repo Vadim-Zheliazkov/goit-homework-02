@@ -1,0 +1,160 @@
+/* ОБЩИЕ СВОЙСТВА */
+/* основной цвет текста: #2E2F42; */
+/* вторичный цвет шрифта: #434455; */
+/* цвет ативации ссылок: #404BBF; */
+/* цвет кнопок текст #FFFFFF; */
+/* цвет кнопок normal  #4D5AE5; */
+/* цвет кнопок hover #404BBF; */
+/* цвет фона под белій текст:#2E2F42; */
+
+body {
+    background-color: #E5E5E5;
+    color: #2E2F42;
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500px;
+}
+
+.list {
+    list-style: none;
+}
+
+
+:root {
+    --first-font-family: "Roboto",
+        sans-serif;
+    --second-font: "Releway", sans-serif;
+    --first-color-text: #2E2F42;
+    --second-color-text: #434455;
+    --color-second-menu: #4D5AE5;
+    --color-activation-nav: #404BBF;
+    --color-button-normal: #4D5AE5;
+    --color-button-hover: #404BBF;
+    --color-button-text: #FFFFFF;
+    --background-color-whitetext: #2E2F42;
+}
+
+
+.header {
+    background-color: #FFFFFF;
+}
+.footer {
+    background-color: var(--background-color-whitetext)
+}   
+/* LOGO */
+.logo {
+    color: var(--first-color-text);
+    font-family: Raleway;
+    font-weight: 800px;
+    font-size: 18px;
+    line-height: 1, 33;
+    text-decoration: none;
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--color-activation-nav)
+}
+
+/* Site-nav */
+
+.site-nav .link {
+    color: var(--first-color-text);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1, 5;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--color-activation-nav);
+}
+
+/* contacts */
+.auth-nav .link {
+    color: var(--second-color-text);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 1, 5;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--color-activation-nav)
+}
+
+/* second menu */
+
+.btn {
+    background-color: var(--color-button-normal);
+    color: var(--color-button-text);
+    font-size: 16px;
+    line-height: 1, 5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--color-button-hover);
+}
+
+/****Заголовки и текст ****/
+.hero {
+    color: #FFFFFF;
+    background-color: #2E2F42;
+    font-weight: 700px;
+    font-size: 56px;
+    line-height: 1, 07;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 1, 11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1, 5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.text-footer {
+    background: var(--bakcground-color-whitetext);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+}
+
+/* Для сокрытия текста(заголовков) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
