@@ -1,65 +1,107 @@
 /* ОБЩИЕ СВОЙСТВА */
+/* цвет фона сайта #E5E5E5;*/
 /* основной цвет текста: #2E2F42; */
 /* вторичный цвет шрифта: #434455; */
 /* цвет ативации ссылок: #404BBF; */
-/* цвет кнопок текст #FFFFFF; */
-/* цвет кнопок normal  #4D5AE5; */
-/* цвет кнопок hover #404BBF; */
+/* цвет кнопок подменю текст #4D5AE5; */
+/* цвет кнопок подменю фон  #F4F4FD; */
+/* цвет кнопок подменю текст hover #FFFFFF; */
+/* цвет кнопок подменю фон hover  #404BBF;*/
 /* цвет фона под белій текст:#2E2F42; */
-
-body {
-    background-color: #E5E5E5;
-    color: #2E2F42;
-    font-style: normal;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500px;
-    letter-spacing: 0.02em;
-}
-
-.list {
-    list-style: none;
-}
-
+/* цвет фона HERO #2E2F42 */
 
 :root {
+    --background-color-pages:#E5E5E5; 
     --first-font-family: "Roboto",
         sans-serif;
     --second-font: "Releway", sans-serif;
     --first-color-text: #2E2F42;
     --second-color-text: #434455;
-    --color-second-menu: #4D5AE5;
+    --color-sm-text: #4D5AE5;
+    --color-sm-background: #F4F4FD;
+    --color-sm-text-hover: #FFFFFF;
+    --color-sm-background-hover:#404BBF;
     --color-activation-nav: #404BBF;
-    --color-button-normal: #4D5AE5;
-    --color-button-hover: #404BBF;
-    --color-button-text: #FFFFFF;
-    --background-color-whitetext: #2E2F42;
+    --background-color-footer: #2E2F42;
+    --background-color-hero:#2E2F42 ;
+    --color-logo-web: #4D5AE5;
+    --color-logo-studio: #2E2F42;
+}
+/* COMMON SET */
+
+body {
+    background-color: var(--background-color-pages);
+    color: #2E2F42;
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
-
-.header {
-    background-color: #FFFFFF;
+.list {
+    list-style: none;        
 }
-.background {
-    background-color: var(--background-color-whitetext)
-}   
+ 
+.background-footer {
+background-color: var(--background-color-footer);
+}
 /* LOGO */
-.logo {
-    color: var(--color-button-normal);
+.color-logo-web {
+    color: var(--color-logo-web);
     font-family: Raleway;
-    font-weight: 800px;
+    font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-decoration: none;
-
-}
-
-.logo:hover,
-.logo:focus {
+} 
+.color-logo-web:hover,
+.color-logo-web:focus {
     color: var(--color-activation-nav)
 }
 
-/* Site-nav */
+.color-logo-studio {
+color: var(--color-logo-studio);
+font-family: Raleway;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.color-logo-studio:hover,
+.color-logo-studio:focus {
+    color: var(--color-activation-nav);
+}
+
+.color-logo-studio-footer {
+    color:#F4F4FD;
+}
+.color-logo-studio-footer:hover,
+.color-logo-studio-footer:focus {
+    color: var(--color-activation-nav);
+}
+
+
+/* BUTTON */
+
+.btn-order {
+    background-color:#4D5AE5;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.btn-order:hover,
+.btn-order:focus {
+    background-color: #404BBF;;
+}
+
+/* Site-nav + link */
 
 .site-nav .link {
     color: var(--first-color-text);
@@ -73,12 +115,16 @@ body {
     color: var(--color-activation-nav);
 }
 
+.list .link {
+text-decoration: none;
+}
+
 /* contacts */
 .auth-nav .link {
     color: var(--second-color-text);
     text-decoration: none;
     font-style: normal;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -88,33 +134,37 @@ body {
     color: var(--color-activation-nav)
 }
 
-/* second menu */
+/* style of second menu */
 
-.btn {
-    background-color: var(--color-button-normal);
-    color: var(--color-button-text);
+.btn-second {
+    background-color: var(--color-sm-background);
+    color: var(--color-sm-text);
     font-size: 16px;
     line-height: 1.5;
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
+    box-sizing: border-box;
+}
+.btn-second:hover,
+.btn-second:focus {
+    color: var(--color-sm-text-hover);
+    background-color: var(--color-sm-background-hover);
 }
 
-.btn:hover,
-.btn:focus {
-    background-color: var(--color-button-hover);
-}
-
-/****Заголовки и текст ****/
+/****HERO Заголовки и текст ****/
 .hero {
     color: #FFFFFF;
     background-color: #2E2F42;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     
+}
+.background-hero {
+    background-color: var(--background-color-footer);
 }
 
 .title {
@@ -134,16 +184,14 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    
     color: #434455;
 }
 
 .text-footer {
-    background: var(--bakcground-color-whitetext);
+    background-color: var(--background-color-whitetext);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    
     color: #E7E9FC;
 }
 
