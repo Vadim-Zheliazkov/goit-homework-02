@@ -11,7 +11,7 @@
 /* цвет фона HERO #2E2F42 */
 
 :root {
-    --background-color-pages:#E5E5E5; 
+    --background-color-pages:#FFFFFF; ; 
     --first-font-family: "Roboto",
         sans-serif;
     --second-font: "Releway", sans-serif;
@@ -31,7 +31,7 @@
 
 body {
     background-color: var(--background-color-pages);
-    color: #2E2F42;
+    color: var(--first-color-text);
     font-style: normal;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -168,6 +168,7 @@ text-decoration: none;
 }
 
 .title {
+    color: var(--first-color-text);
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -177,22 +178,25 @@ text-decoration: none;
 .subtitle {
     font-size: 20px;
     line-height: 24px;
-   
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+   color: var(--first-color-text);
 }
 
 .text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #434455;
+    color:var(--second-color-text);
 }
 
 .text-footer {
-    background-color: var(--background-color-whitetext);
-    font-weight: 400;
+        font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: #E7E9FC;
+    background-color: var(--background-color-whitetext);
 }
 
 /* Для сокрытия текста(заголовков) */
