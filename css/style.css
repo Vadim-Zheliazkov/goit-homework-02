@@ -32,9 +32,8 @@
 body {
     background-color: var(--background-color-pages);
     color: var(--first-color-text);
-    font-style: normal;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+        font-weight: 500;
     letter-spacing: 0.02em;
 }
 
@@ -88,6 +87,9 @@ font-family: Raleway;
 .btn-order {
     background-color:#4D5AE5;
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif ;
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     display: flex;
@@ -123,7 +125,7 @@ text-decoration: none;
 .auth-nav .link {
     color: var(--second-color-text);
     text-decoration: none;
-    font-style: normal;
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -139,6 +141,9 @@ text-decoration: none;
 .btn-second {
     background-color: var(--color-sm-background);
     color: var(--color-sm-text);
+    font-family: 'Roboto';
+
+font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     display: flex;
@@ -197,6 +202,12 @@ text-decoration: none;
     line-height: 1.5;
     color: #E7E9FC;
     background-color: var(--background-color-whitetext);
+}
+
+/* СЕКЦИЯ 3 OUR TEAM */
+
+.section-our-team {
+    background-color: #F4F4FD;;
 }
 
 /* Для сокрытия текста(заголовков) */
